@@ -580,7 +580,6 @@ box-shadow: 0 8px 25px rgba(0, 120, 200, 0.25);
 
 </style>
 """, unsafe_allow_html=True)
-<div class="weather-emojis">
 st.markdown("""
 <div class="weather-emojis">
 
@@ -620,8 +619,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
     
 
-</div>
-""", unsafe_allow_html=True)
 # -------------------------------------------------
 # SAMPLE DELHI WEATHER DATA
 # -------------------------------------------------
@@ -1079,8 +1076,10 @@ elif page == "💡 Weather Insights":
         ]
     )
 
-    st.info("The correlation value shows the statistical relationship between
-        temperature and humidity in the sample dataset.")
+    st.info(
+        "The correlation value shows the statistical relationship between "
+        "temperature and humidity in the sample dataset."
+    )
 
     # -----------------------------
     # DATA TABLE
@@ -1098,8 +1097,6 @@ elif page == "💡 Weather Insights":
 # -------------------------------------------------
 st.divider()
 st.caption("Delhi Weather Data Analysis | Python + Streamlit + Data Analytics")
-
-
 
 
 
